@@ -1,0 +1,39 @@
+%div
+  .row.row--full-height
+    .row__medium-1-2
+      = cl_image_tag "mower", :class => "img--full-height img--background-until-medium"
+    .row__medium-1-2
+      .container.container--full-height.container--centered-vh.container--overlay-until-medium-dark
+        %h1.section-title= "Masinate rent"
+        %p#banner-typed-text= "Aiandus- ja puhastusmasinad rendiks"
+        = link_to "Vaata masinaid", machines_path, :class => "button button--outline"
+.page-section.page-section--light-accent.relative
+  .container.generic-content-container
+    %h2.section-title.topic-title= "Helista, et broneerida"
+    .row
+      .row__large-3-5
+        %p
+          = "Broneeri aeg ja masin"
+          / %span.cursive= "I'm working on that one."
+        %p= ""
+        %p= ""
+        = link_to contact_path do
+          :markdown
+            Broneeri masin
+  / = image_tag "https://res.cloudinary.com/adelcloud/image/upload/v1583609132/veebileht_ynlgb4.jpg", :height => "500", :width => "500", :alt => "Adel Müürsepp", :class => "img--absolute-br img--backward-until-large reveal-item"
+.page-section
+  .container
+    %h2.section-title.topic-title= "Tule masinale järgi"
+    %p= "Masinate vastuvõtukohad"
+    / %p= ""
+    = link_to about_path do
+      :markdown
+        Loe vastuvõtu kohta
+/ .page-section.page-section--light-accent
+/   .container
+/     %h2.section-title.topic-title= "Too masin tagasi"
+/     %p= "Samasse kohta"
+/     / %p= ""
+
+
+

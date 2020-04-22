@@ -1,0 +1,10 @@
+.row.row--short.relative
+  .row__medium-1-2
+    = cl_image_tag 'cleaning-machine', :alt => 'Computer', :class => 'img--full-height img--background img--grayscaled'
+    .overlay.overlay--dark-color
+.page-section
+  .container
+    %h1.section-title= "Masinad"
+    = source_helper "alert alert-info"
+    .row.row--gutters
+      = render :partial => "portfolio_item", :collection => @portfolio_items
